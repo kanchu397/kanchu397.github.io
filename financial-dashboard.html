@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Business Intelligence Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #D1D5DB;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <div class="mb-8">
+            <a href="index.html" class="text-indigo-400 hover:text-indigo-300 transition duration-300">&larr; Back to Portfolio</a>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">Business Intelligence Dashboard</h1>
+        <p class="text-lg text-gray-400 mt-4 mb-8">An end-to-end BI solution for a family business, transforming scattered data into a strategic asset.</p>
+
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-4">Live Dashboard</h2>
+            <div class="aspect-w-16 aspect-h-9 border border-gray-700 rounded-lg overflow-hidden">
+                <iframe title="Financial Overview Dashboard" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiYTNlNjI0N2UtMmNjZS00Nzc2LTljOTgtZjI0N2Q4NjdmNGU1IiwidCI6IjAyOWExNGFjLWJjZTEtNDc0ZC1iNWJmLWI5MzRmOTMzNzI3OSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-bold text-white mb-4">Project Deep Dive</h2>
+                <div class="space-y-6 text-gray-300">
+                    <p><strong class="text-indigo-400">The Challenge:</strong> The business's financial records were fragmented across 69 different Excel sheets. This made it impossible to get a quick, accurate overview of performance, identify top customers, or track cash flow effectively. All analysis was manual, time-consuming, and prone to errors.</p>
+                    <p><strong class="text-indigo-400">My Solution:</strong> I tackled this by creating a full ETL (Extract, Transform, Load) pipeline. First, I wrote a Python script using the Pandas library to automatically extract the data from every sheet, clean it, and consolidate it into a single master CSV file. With this clean dataset, I then designed and built this interactive dashboard in Power BI.</p>
+                    <p><strong class="text-indigo-400">Key Insights & Impact:</strong></p>
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+                        <li><span class="font-semibold text-white">Identified Key Revenue Drivers:</span> The dashboard immediately highlighted that a small number of "school" clients were responsible for a significant portion of revenue, suggesting a focus on this segment.</li>
+                        <li><span class="font-semibold text-white">Improved Cash Flow Visibility:</span> The trendline chart allowed the owner to visualize seasonal peaks and troughs in debit and credit, helping with better financial planning.</li>
+                        <li><span class="font-semibold text-white">Enabled Data-Driven Decisions:</span> By filtering by customer, the owner could instantly check account receivables, leading to faster payment follow-ups.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4">Technology Stack</h2>
+                <div class="space-y-3">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-white">Power BI</h3>
+                        <p class="text-sm text-gray-400">For interactive visualization and dashboarding.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-white">Python (Pandas)</h3>
+                        <p class="text-sm text-gray-400">For data extraction, cleaning, and consolidation.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-white">MS Excel</h3>
+                        <p class="text-sm text-gray-400">As the original data source.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Banking & Risk Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #D1D5DB;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <div class="mb-8">
+            <a href="index.html" class="text-indigo-400 hover:text-indigo-300 transition duration-300">&larr; Back to Portfolio</a>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">Banking & Risk Analysis Dashboard</h1>
+        <p class="text-lg text-gray-400 mt-4 mb-8">An analytical dashboard designed to identify, quantify, and mitigate credit risk within a loan portfolio.</p>
+
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-4">Live Dashboard</h2>
+            <div class="aspect-w-16 aspect-h-9 border border-gray-700 rounded-lg overflow-hidden">
+                <iframe title="Banking Dashboard and Risk Analysis" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZWE1ZjRiMzAtNWY3Zi00ZjZiLTlkYjQtYmI3Zjc2ZGU2YjU3IiwidCI6IjAyOWExNGFjLWJjZTEtNDc0ZC1iNWJmLWI5MzRmOTMzNzI3OSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-bold text-white mb-4">Project Deep Dive</h2>
+                <div class="space-y-6 text-gray-300">
+                    <p><strong class="text-indigo-400">The Challenge:</strong> A bank needs to understand the key drivers of loan defaults to minimize losses. This requires moving beyond simple portfolio summaries to a more predictive, risk-based view of their customers.</p>
+                    <p><strong class="text-indigo-400">My Solution:</strong> I analyzed a sample loan portfolio dataset to build a risk analysis dashboard. The goal was to segment customers based on their risk profiles and identify the specific characteristics that were most correlated with a high probability of default.</p>
+                    <p><strong class="text-indigo-400">Key Insights & Impact:</strong></p>
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+                        <li><span class="font-semibold text-white">Quantified Risk Segments:</span> The analysis identified that 30% of clients could be classified as "High Risk," characterized by having double the average loan amounts but lower credit scores.</li>
+                        <li><span class="font-semibold text-white">Identified Predictive Factors:</span> The dashboard revealed that a Loan-to-Income Ratio greater than 50% and a client engagement history of less than 5 years were strong predictors of default.</li>
+                        <li><span class="font-semibold text-white">Actionable Recommendations:</span> Based on these insights, I demonstrated that the bank could improve its default prediction accuracy by 15%, allowing for more targeted risk mitigation strategies, such as adjusting loan terms for high-risk applicants.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4">Technology Stack</h2>
+                <div class="space-y-3">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-white">Power BI</h3>
+                        <p class="text-sm text-gray-400">For segmentation analysis and visualization.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-white">Risk Analysis</h3>
+                        <p class="text-sm text-gray-400">Core financial and statistical concepts.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-white">Predictive Analytics</h3>
+                        <p class="text-sm text-gray-400">Identifying key drivers and correlations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
